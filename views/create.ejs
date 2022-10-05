@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Imobiliária</title>
+
+  </head>
+
+  <style>
+    body{
+      background-color: #5E5E5E;
+    }
+  </style>
+  <body>
+      <div class="container mt-4">
+        <div class="card border-secondary">
+            <div class="card-header">Novo registro</div>
+            <div class="card-body">
+                <form action="/save" method="POST">
+                    <div class="mb-3">
+                        <label for="user">Cliente</label>
+                        <input type="text" class="form-control" id='user' name='user' tabindex="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Propriedade</label>
+                       <select id="property" name="property" class="form-select" aria-label="Default select example">
+                        <option value="Casa" selected>Casa</option>
+                        <option value="Apartamento">Apartamento</option>
+                       </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Valor</label>
+                        <input type="number" class="form-control" id='value' name='value' tabindex="1">
+                    </div>
+                    <button type="submit" class="btn btn-primary" tabindex="5">Salvar</button>
+                    <a href="/" class="btn btn-secondary">Cancelar</a>
+                </form>
+            </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
