@@ -1,4 +1,3 @@
-
 const connection = require('../database/db')
 
 exports.save = (req, res) => {

@@ -1,0 +1,5 @@
+Para iniciar o projeto:
+    npm init -y
+
+Para instalar os fremworks:
+    npm install pg nodemon express ejs
